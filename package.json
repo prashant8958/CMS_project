@@ -1,0 +1,20 @@
+{
+  "name": "real-project",
+  "version": "1.0.0",
+  "description": "major project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "PRASHANT PAL",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "multer": "^1.4.5-lts.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

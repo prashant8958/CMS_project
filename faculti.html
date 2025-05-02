@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard - Create Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px 40px;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #3f51b5;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #303f9f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    👨‍🏫 Teacher Dashboard - Create Class
+  </header>
+
+  <div class="container">
+    <h2>Create New Class</h2>
+    <form action="/create-class" method="POST">
+      <label for="class-name">Class Name:</label>
+      <input type="text" id="class-name" name="className" placeholder="e.g. 10th Grade A" required>
+
+      <label for="subject-name">Subject Name:</label>
+      <input type="text" id="subject-name" name="subjectName" placeholder="e.g. Mathematics" required>
+
+      <button type="submit" class="btn">Create Class</button>
+    </form>
+
+    <form action="/view-class" method="GET">
+      <button type="submit" class="btn">➕ VIEW CLASS</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 MyClassroom | Designed by Prashant Pal
+  </footer>
+
+</body>
+</html>
